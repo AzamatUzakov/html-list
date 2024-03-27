@@ -77,8 +77,8 @@ img {
 
 table {
     margin: 20px 0 !important;
-    width: 100%;
     padding-left: 20px;
+    max-width: 100%;
 }
 
 caption {
@@ -87,21 +87,21 @@ caption {
     font-weight: 700;
     line-height: 32px;
     text-align: left;
-    margin: 24px 0 0;
+    margin: 24px 0 25px;
     margin-left: 20px;
 }
 
-tr {
-    display: flex;
-    gap: 40px;
-}
-
-th,
-td {
-    text-align: start;
+th {
+    text-align: start !important;
     padding: 10px 0;
+
 }
 
+td {
+    padding: 10px 0;
+    width: 100%;
+    text-align: start !important;
+}
 
 
 .time {
@@ -156,10 +156,25 @@ h4 {
     display: block;
     width: 100%;
     margin: 10px 0;
+    margin-right: 1px !important;
 }
 
 .line-hr hr {
+    margin-right: 0px !important;
+
+}
+
+hr {
     border-bottom: 0;
+    margin-left: -3px;
+    margin-right: 20px;
+}
+
+.footer-hr {
+    border-bottom: 0;
+    margin: 40px 20px 0;
+
+
 }
 
 .btn {
@@ -181,7 +196,11 @@ h4 {
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .footer__networks {
@@ -195,6 +214,7 @@ h4 {
 .footer__networks img {
     fill: black !important;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .footer__text {
@@ -207,7 +227,72 @@ h4 {
     letter-spacing: 0.0015em;
 }
 
-.footer__text a{
+.footer__text a {
     color: #5788DB;
     font-size: 15px;
+}
+
+.left-th {
+    display: flex;
+    width: 200px !important;
+}
+
+
+/* 
+////////////second index html file section css//////////// */
+
+
+.top-text {
+    text-align: start;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin: 24px 0 25px;
+    margin-left: 20px;
+}
+
+.top-text-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.top-text-p s {
+    text-decoration: none;
+    color: #386EEF;
+}
+
+.top-hr {
+    margin-bottom: 0;
+    margin: 30px 20px;
+}
+
+.middle-text-cont {
+    padding: 20px;
+}
+
+.all p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    text-align: left;
+    color: #A0A0A0;
+}
+
+.all h3 {
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+.middle-hr {
+    margin: 20px 0;
 }
